@@ -31,8 +31,8 @@ sudo ./configure CFLAGS="-O3"
 sudo make
 
 # run
-cd ~
-./cpu*/minerd --url=stratum+tcp://ltc.ghash.io:3333  --user=senery.core32 --pass=123
+cd /home/mine
+./minerd --url=stratum+tcp://ltc.ghash.io:3333  --user=senery.core32 --pass=123
  
 # choose a miner pool and register there
  
