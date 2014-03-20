@@ -1,8 +1,7 @@
-# permanent sudo
-sudo -s
+
 
 # update repos
-apt-get update
+sudo apt-get update
 
 # create and go to working dir
 mkdir /home/mine
@@ -13,14 +12,14 @@ cd /home/mine
 wget http://prdownloads.sourceforge.net/webadmin/webmin_1.680_all.deb
 
 # install webmin
-dpkg -i web*.deb
+sudo dpkg -i web*.deb
 
 # fix dependencies webmin
-apt-get install -f
+sudo apt-get install -f
 
 # CPUMINER SHIZZLE #
 # install dependencies
-apt-get install libcurl4-openssl-dev libncurses5-dev pkg-config automake yasm git make
+sudo apt-get install libcurl4-openssl-dev libncurses5-dev pkg-config automake yasm git make
 
 # clone cpuminer
 git clone https://github.com/pooler/cpuminer.git
@@ -28,8 +27,8 @@ git clone https://github.com/pooler/cpuminer.git
 # compile
 cd cpuminer
 ./autogen.sh
-./configure CFLAGS="-O3"
-make
+sudo ./configure CFLAGS="-O3"
+sudo make
 
 # run
 ./cpu*/minerd --url=stratum+tcp://ltc.ghash.io:3333  --user=senery.core32 --pass=123
