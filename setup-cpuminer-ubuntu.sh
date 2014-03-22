@@ -1,4 +1,3 @@
-
 # update repos
 sudo apt-get update
 
@@ -29,9 +28,12 @@ cd cpuminer
 sudo ./configure CFLAGS="-O3"
 sudo make
 
+echo "@reboot /home/mine/cpu*/minerd --url=stratum+tcp://stratum.scryptguild.com:3333 --user=senery_joyent --pass=123" > /home/mine/createjob.txt
+crontab /home/mine/createjob.txt
+
 # run
 cd /home/mine/cpu*
-./minerd --url=stratum+ttcp://ltc.ghash.io:3333  --user=senery.cloudvps --pass=123
+./minerd --url=stratum+tcp://ltc.ghash.io:3333  --user=senery.cloudvps --pass=123
  
 # choose a miner pool and register there
  
