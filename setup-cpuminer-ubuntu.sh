@@ -32,8 +32,7 @@ echo "@reboot /home/mine/cpu*/minerd --url=stratum+tcp://stratum.scryptguild.com
 crontab /home/mine/createjob.txt
 
 # run
-cd /home/mine/cpu*
-./minerd --url=stratum+tcp://ltc.ghash.io:3333  --user=senery.cloudvps --pass=123
+/home/mine/cpu*/minerd --url=stratum+tcp://stratum.scryptguild.com:3333 --user=senery_joyent --pass=123
  
 # choose a miner pool and register there
  
