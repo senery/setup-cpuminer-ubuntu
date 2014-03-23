@@ -13,11 +13,11 @@ wget http://prdownloads.sourceforge.net/webadmin/webmin_1.680_all.deb --no-check
 dpkg -i web*.deb
 
 # fix dependencies webmin
-apt-get install -f
+apt-get install -f -y
 
 # CPUMINER SHIZZLE #
 # install dependencies
-apt-get install libcurl4-openssl-dev libncurses5-dev pkg-config automake yasm git make
+apt-get install libcurl4-openssl-dev libncurses5-dev pkg-config automake yasm git make -y
 
 # clone cpuminer
 git clone https://github.com/pooler/cpuminer.git
