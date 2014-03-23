@@ -7,7 +7,7 @@ cd /home/mine
 
 # WEBMIN SHIZZLE #
 # get webmin package
-wget http://prdownloads.sourceforge.net/webadmin/webmin_1.680_all.deb
+wget http://prdownloads.sourceforge.net/webadmin/webmin_1.680_all.deb --no-check-certificate
 
 # install webmin
 dpkg -i web*.deb
