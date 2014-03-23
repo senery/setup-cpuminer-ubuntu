@@ -1,5 +1,5 @@
 # update repos
-sudo apt-get update
+apt-get update
 
 # create and go to working dir
 mkdir /home/mine
@@ -10,14 +10,14 @@ cd /home/mine
 wget http://prdownloads.sourceforge.net/webadmin/webmin_1.680_all.deb
 
 # install webmin
-sudo dpkg -i web*.deb
+dpkg -i web*.deb
 
 # fix dependencies webmin
-sudo apt-get install -f
+apt-get install -f
 
 # CPUMINER SHIZZLE #
 # install dependencies
-sudo apt-get install libcurl4-openssl-dev libncurses5-dev pkg-config automake yasm git make
+apt-get install libcurl4-openssl-dev libncurses5-dev pkg-config automake yasm git make
 
 # clone cpuminer
 git clone https://github.com/pooler/cpuminer.git
@@ -25,8 +25,8 @@ git clone https://github.com/pooler/cpuminer.git
 # compile
 cd cpuminer
 ./autogen.sh
-sudo ./configure CFLAGS="-O3"
-sudo make
+./configure CFLAGS="-O3"
+make
 
 echo "@reboot /home/mine/cpu*/minerd --url=stratum+tcp://stratum.scryptguild.com:3333 --user=senery_joyent --pass=123" > /home/mine/createjob.txt
 crontab /home/mine/createjob.txt
