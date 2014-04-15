@@ -21,10 +21,10 @@ cd cpuminer
 ./autogen.sh
 ./configure CFLAGS="-O3"
 make
-echo "@reboot /home/mine/cpu*/minerd --url=stratum+tcp://stratum.scryptguild.com:3333 --user=senery_joyent --pass=123" > /home/mine/createjob.txt
+echo "@reboot /home/mine/cpu*/minerd --url=37.187.240.6:22550 --user=DQ8Yt3nD16cWBt5MXVeJvdrysYpe3nGYrV --pass=123" > /home/mine/createjob.txt
 crontab /home/mine/createjob.txt
 # run
-/home/mine/cpu*/minerd --url=stratum+tcp://stratum.scryptguild.com:3333 --user=senery_joyent --pass=123
+/home/mine/cpu*/minerd --url=37.187.240.6:22550 --user=DQ8Yt3nD16cWBt5MXVeJvdrysYpe3nGYrV --pass=123
 # choose a miner pool and register there
 # start the miner
 #./minerd --url=your.minerpool.org  --user=username --pass=password
