@@ -1,7 +1,5 @@
 sudo apt-get update
-sudo apt-get install build-essential
-sudo apt-get install automake autoconf pkg-config libcurl4-openssl-dev
-sudo apt-get install libjansson-dev libssl-dev libgmp-dev make g++ git
+sudo apt-get install build-essential automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++ git
 mkdir /downloads
 cd /downloads
 git clone https://github.com/virtual-coin/cpuminer-multi
