@@ -7,4 +7,6 @@ git clone https://github.com/virtual-coin/cpuminer-multi
 cd cpuminer-multi/
 ./build.sh
 make install
-cpuminer -a cryptonight -o stratum+tcp://xmr-eu1.nanopool.org:14444 -u 87TSNuCcqeAg4GXDywSpebAd9HeLaGAAoi59rvd1Rg4X9sgz8aTWm4PEPtsg8oMxEpK5fpsqfuF4y8w2XMs9FTMd34BaCmH.aws -p postvak.jo@gmail.com
+#cpuminer -a cryptonight -o stratum+tcp://xmr-eu1.nanopool.org:14444 -u 87TSNuCcqeAg4GXDywSpebAd9HeLaGAAoi59rvd1Rg4X9sgz8aTWm4PEPtsg8oMxEpK5fpsqfuF4y8w2XMs9FTMd34BaCmH.aws -p postvak.jo@gmail.com
+cpuminer -a scrypt --url=stratum+tcp://europe.solomining.io:8882 --userpass=DNkNBZ9HqJLMou8FTdGQyN33AJX5qsSwdA:x
+
