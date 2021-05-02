@@ -1,6 +1,6 @@
-sudo apt-get update
-sudo apt-get install build-essential automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++ git
-sudo apt-get install zlib1g-dev
+sudo apt-get update &&
+sudo apt-get install build-essential automake autoconf pkg-config libcurl4-openssl-dev libjansson-dev libssl-dev libgmp-dev make g++ git &&
+sudo apt-get install zlib1g-dev &&
 sudo mkdir /downloads
 cd /downloads
 sudo git clone https://github.com/virtual-coin/cpuminer-multi
