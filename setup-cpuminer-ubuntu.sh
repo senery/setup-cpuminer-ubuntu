@@ -14,4 +14,4 @@ cpuminer -a scrypt --url=stratum+tcp://litecoinpool.org:3333	--userpass=senery.a
 cpuminer -a scrypt --url=stratum+tcp://scrypt.eu.mine.zergpool.com:3433 --userpass=1C3Wy7ejWjkk3TdDojpK4bqDqvXdX62HAD:c=BTC,mc=EFL,ID=aws1
 
 bc1qek8w92e7ayykwv507wkkkxgfdhhm7vnecp0sl7
-
+cpuminer -a scrypt --url=stratum+tcp://scrypt.eu.mine.zpool.ca:3433 --userpass=DJgkh8C3hboyU3nRCAf8t2vzo1Mdqp3G2v:c=DOGE
